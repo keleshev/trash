@@ -5,6 +5,8 @@ from datetime import datetime
 
 
 def trash(*files, **options):
+    if not files:
+        exit('Usage: trash <files>...')
     assert list(options) in (['trash_dir'], [])
     trash_dir = os.path.expanduser(options.get('trash_dir') or '~/.Trash')
     timestamp = '.' + datetime.now().isoformat()
