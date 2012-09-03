@@ -1,4 +1,4 @@
-trash
-=====
+trash: safe `rm` substitute for OS X
+===============================================================================
 
-Safe `rm` substitute for OS X
+    Usage: trash <files>...
